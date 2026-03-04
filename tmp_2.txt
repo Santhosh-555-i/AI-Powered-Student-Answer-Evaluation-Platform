@@ -1,0 +1,8 @@
+
+
+1. Explain the principle of working of a transistor in terms of excess carrier injection. 
+2. Explain the modes of operation of a transistor taking CE configuration as an example. 
+3. Explain the constitution of the currents in a transistor with the help of a schematic. 
+4. Explain Ebers-Moll model of a transistor with necessary diagrams. 
+5. Explain the small signal model of a transistor with necessary diagrams 
+  

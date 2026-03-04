@@ -1,0 +1,278 @@
+
+
+   Principle of Working of a Transistor (Excess Carrier Injection) 
+A BJT works based on minority carrier injection and control of charge carriers across two p-
+n junctions. 
+Consider an NPN transistor: 
+• The Emitter (N) is heavily doped. 
+• The Base (P) is very thin and lightly doped. 
+• The Collector (N) is moderately doped. 
+Working Principle: 
+1. Forward bias the Emitter-Base (EB) junction 
+o Majority carriers (electrons in NPN) are injected from the emitter into the 
+base. 
+o These injected electrons become excess minority carriers in the base region. 
+2. Diffusion across Base 
+o Since the base is very thin and lightly doped: 
+▪ Only a small number recombine with holes. 
+▪ Most electrons diffuse across the base. 
+3. Reverse bias the Collector-Base (CB) junction 
+o The electric field in the CB junction sweeps the electrons into the collector. 
+o Thus, a large collector current flows. 
+Key Idea: 
+A small base current controls a large collector current because: 
+• The base only replaces the few recombined carriers. 
+• Most injected carriers reach the collector. 
+퐼
+퐶
+≈훽퐼
+퐵
+ 
+ 
+where 
+• 퐼
+퐶
+= Collector current 
+• 퐼
+퐵
+= Base current 
+• 훽= Current gain 
+
+ 
+   Modes of Operation of a Transistor (CE Configuration) 
+In Common Emitter (CE) configuration: 
+• Input: Base–Emitter 
+• Output: Collector–Emitter 
+The mode depends on biasing of the two junctions: 
+Mode E-B Junction C-B Junction Application 
+Cutoff Reverse Reverse OFF state 
+Active Forward Reverse Amplifier 
+Saturation Forward Forward Switch ON 
+Reverse Active Reverse Forward Rare 
+ 
+1. Cutoff Mode 
+• No base current. 
+• 퐼
+퐶
+≈0 
+• Transistor behaves like an open switch. 
+ 
+2. Active Mode (Amplification Mode) 
+• EB: Forward biased 
+• CB: Reverse biased 
+• 퐼
+퐶
+=훽퐼
+퐵
+ 
+• Used in amplifiers. 
+ 
+3. Saturation Mode 
+• Both junctions forward biased. 
+• 푉
+퐶퐸
+is very small (~0.2 V for silicon). 
+• Transistor behaves like a closed switch. 
+
+ 
+   Constitution of Currents in a Transistor 
+In an NPN transistor, the currents are: 
+• 퐼
+퐸
+= Emitter current 
+• 퐼
+퐵
+= Base current 
+• 퐼
+퐶
+= Collector current 
+Current Relationship: 
+퐼
+퐸
+=퐼
+퐶
++퐼
+퐵
+ 
+ 
+ 
+Current Components: 
+Emitter Current 푰
+푬
+ 
+• Consists mainly of electrons injected into the base. 
+• Small component of holes injected from base to emitter. 
+Collector Current 푰
+푪
+ 
+Has two parts: 
+1. Main component: Electrons injected from emitter and collected. 
+2. Leakage current: 퐼
+퐶퐵푂
+(reverse leakage). 
+퐼
+퐶
+=훼퐼
+퐸
++퐼
+퐶퐵푂
+ 
+ 
+where 훼≈0.98−0.998 
+ 
+Schematic Representation (NPN) 
+Emitter (N+)  →→→  Base (P)  →→→  Collector (N) 
+ 
+Electron flow: E → B → C 
+Base current: small (recombination current) 
+ 
+   Ebers–Moll Model of a Transistor 
+
+The Ebers–Moll model is a large-signal model valid in all regions (cutoff, active, saturation). 
+It treats the transistor as: 
+• Two diodes 
+• Two controlled current sources 
+ 
+Equivalent Representation: 
+It consists of: 
+1. Emitter-base diode 
+2. Collector-base diode 
+3. Controlled current source 훼
+퐹
+퐼
+퐸
+ 
+4. Controlled current source 훼
+푅
+퐼
+퐶
+ 
+ 
+Ebers-Moll Equations: 
+퐼
+퐶
+=훼
+퐹
+퐼
+퐸
+−퐼
+퐶퐵푂
+ 
+퐼
+퐸
+=훼
+푅
+퐼
+퐶
+−퐼
+퐸퐵푂
+ 
+ 
+More complete form: 
+퐼
+퐶
+=퐼
+푆
+(푒
+푉
+퐵퐸
+/푉
+푇
+−1)−훼
+푅
+퐼
+푆
+(푒
+푉
+퐵퐶
+/푉
+푇
+−1) 
+ 
+Where: 
+• 퐼
+푆
+= Saturation current 
+• 푉
+푇
+= Thermal voltage 
+• 훼
+퐹
+= Forward current gain 
+• 훼
+푅
+= Reverse current gain 
+ 
+Importance: 
+• Works in all operating regions. 
+• Used in transistor circuit simulation. 
+ 
+
+   Small Signal Model of a Transistor 
+The small signal model is used for AC analysis in amplifier circuits. 
+Most commonly used model: 
+     Hybrid-π Model 
+ 
+Hybrid-π Model (CE Configuration) 
+Main elements: 
+1. 푟
+휋
+→ Base-emitter resistance 
+2. 푔
+푚
+푣
+휋
+→ Controlled current source 
+3. 푟
+표
+→ Output resistance 
+ 
+Important Parameters: 
+푔
+푚
+=
+퐼
+퐶
+푉
+푇
+ 
+푟
+휋
+=
+훽
+푔
+푚
+ 
+푟
+표
+=
+푉
+퐴
+퐼
+퐶
+ 
+ 
+Where: 
+• 푔
+푚
+= Transconductance 
+• 푉
+퐴
+= Early voltage 
+ 
+Small Signal Equivalent Circuit (CE) 
+      rπ 
+B ───/\/\/───┐ 
+              │ 
+              ↓ gm vπ 
+              │ 
+C ────────────┘── ro ─── Ground 
+ 
+Why Small Signal Model? 
+
+• Used to calculate: 
+o Voltage gain 
+o Input impedance 
+o Output impedance 
+• Valid for small AC variations around Q-point. 
+ 
